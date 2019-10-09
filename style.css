@@ -20,6 +20,8 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+
+
 /* Navigation */
 
 
@@ -67,12 +69,19 @@ section {
     text-align: center;
     width: 100%;
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align:start;
+   
+}
+
+
+section h1{
+    margin-top: 10vh;
 }
 
 section#home {
     justify-content: center;
 }
+
 
 
 /* About */
@@ -175,11 +184,7 @@ section#home {
     margin-right: 0.5rem;
 }
 
-section h1 {
-    font-size: 1.8rem;
-    margin-top: 5rem;
 
-}
 
 section h2 {
     font-size: 1.4rem;
@@ -216,6 +221,7 @@ select p {
 
 section#home {
     background: url(image/sky.jpg) no-repeat center center/cover;
+    height: 100vh;
 }
 
 
@@ -254,7 +260,7 @@ section#home {
 .techIcons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 20vh;
+    margin-top: 5vh;
     justify-items: center;
 }
 
@@ -360,6 +366,7 @@ section#home {
     outline: none;
     background-color: #F1F1F1;
     border-radius: 12px;
+    font-size: 1rem;
 }
 
 .contact form button {
@@ -400,11 +407,18 @@ input {
 
 @media screen and (max-width: 1024px) {
 
-
-
-    .navbar {
-        background-color: rgb(80, 79, 79, 0.3);
+    
+    
+    .contact form button {
+        padding: 1rem;
+        margin: 1rem;
+   
     }
+    .navbar {
+        background-color: rgb(162, 163, 163);
+    }
+
+
 
     .navbar ul {
         flex-direction: column;
@@ -416,11 +430,11 @@ input {
 
     .navbar ul li a{
         width:100%;
-        padding: 0.3rem;
+        padding: 0.1rem;
         margin-left:0;
         margin-right:0;
         display:block;
-        background-color: rgba(117, 174, 201, 0.4);
+        background-color: rgba(40, 114, 148, 0.5);
     }
 
     .navbar ul li {
@@ -435,7 +449,7 @@ input {
         transition: 0.1s;
         transition: all 0.1s ease-out;
         cursor: pointer;
-    } *
+    } 
 
 
     .name {
@@ -469,18 +483,20 @@ input {
         padding: 0.7rem;
     }
 
-    section h1 {
-        font-size: 1.5rem;
-        margin-top: 13rem;
-        margin-bottom: 1rem;
-
+    section{
+        height: auto;
     }
-
-
 
     section h2 {
         font-size: 1.2rem;
 
+
+    }
+
+    section h1 {
+        font-size: 1.5rem;
+        margin-top: 11rem;
+        margin-bottom: 1rem;
 
     }
 
@@ -505,8 +521,13 @@ input {
     .grid .content {
         justify-self: center;
         width: 22rem;
+        margin: 1rem; 
 
 
+    }
+
+    .image{
+        margin: 1rem; 
     }
 
     .techIcons {
@@ -540,48 +561,51 @@ input {
 
     .info i {
         margin: 0.5rem;
+        color: #504f4f;
+    }
+
+    .info li a{
+        
+        color: #504f4f;
     }
 
     .info,
     .contact {
-        margin: 1rem;
+        padding: 1rem;
     }
 
     .contact form {
         grid-gap: 0;
     }
 
-    .contact form label {
-        display: block;
+    .contact form input,
+    .contact form textarea{
+     font-size: 1rem;
+     
+    
     }
 
-
-
-    .contact form button,
+  
     .contact form input,
     .contact form textarea {
-        width: 90%;
-        padding: 0.75rem;
-        margin-top: 0.2rem;
+        margin: 0.6rem;
+   
     }
 
  
 
     section#contact h1 {
 
-        margin-bottom: 0.5rem;
         color: #504f4f;
     }
 
-    section#contact {
+    .contact {
         background-image: linear-gradient(to left top, #678890, #5c838c, #507e89, #447985, #367482);
 
     }
 
 
-    .info2 {
-        margin: 0.7rem;
-    }
+
 
     .info,
     .contact {
@@ -616,16 +640,13 @@ input {
             padding: 0.2rem;
         }
 
-        .navbar ul li {
+
+
+        .navbar ul li a{
             padding: 0;
         }
-
-        section h1 {
-            font-size: 1.4rem;
-            margin-top: 10rem;
-            margin-bottom: 1rem;
-
-        }
+    
+    
 
         .grid .content {
             width: 19rem;
@@ -635,7 +656,7 @@ input {
 
         .grid .content p {
             margin: 0.5rem;
-            font-size: 80%;
+            font-size: 90%;
         }
 
         .techIcons a {
@@ -650,15 +671,10 @@ input {
         .contact form input,
         .contact form textarea {
             width: 85%;
-            padding: 0.7rem;
+            padding: 0.5rem;
         }
 
 
-        .contact form button {
-            width: 90%;
-            padding: 0.7rem;
-            margin-top: 0.2rem;
-        }
 
 
         textarea {
@@ -671,11 +687,25 @@ input {
         .info2 {
             margin: 0rem;
         }
-        section h1 {
-         
-            margin-top: 12.5rem;
-        
+    
+        .info{
+            padding: 0;
         }
+
+        .contact form button {
+            padding: 0.4rem;
+          
+       
+        }
+
+        section h1 {
+            font-size: 1.2rem;
+            margin-top: 6rem;
+            margin-bottom: 1rem;
+
+        }
+
+
 
     }
 
@@ -706,19 +736,19 @@ input {
             padding: 0.5rem;
         }
 
-
         .contact form button {
-            width: 90%;
-            padding: 0.4rem;
-            margin-top: 0.2rem;
+            padding: 0.1rem;
+            margin: 1rem;
+       
         }
 
+        section h1 {
+            font-size: 1rem;
+            margin-top: 10rem;
+            margin-bottom: 1rem;
 
-        textarea {
-            height: 4em;
-            width: 50em;
         }
-
+     
      
         .info2 {
             margin: 0rem;
