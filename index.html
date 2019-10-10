@@ -24,7 +24,6 @@
         <li><a href="#work">Moje projekty</a></li>
         <li><a href="#technologies">Technologie w których pracuję</a></li>
         <li><a href="#contact">Kontakt</a></li>
-
       </ul>
     </nav>
     <section id="home">
@@ -46,7 +45,7 @@
       <h1>O mnie</h1>
       <div class="grid">
         <div class="image">
-          <img src="image/face.png" alt="">
+          <img src="image/face.png" alt="zdjęcie portretowe Pawła Więcko">
         </div>
         <div class="content">
           <p>Pół roku temu rozpocząłem zmianę branży na IT. Od początku nauki postanowiłem wejść w świat front-end, ze
@@ -64,11 +63,21 @@
       <div class="projects">
         <div class="box">
           <a href="https://hairdressing-salon-demo.firebaseapp.com/" target="_blank">
-            <img src="image/projects/project1.jpg" alt="Project" />
+            <img src="image/projects/project.JPG" alt="Project" />
           </a>
           <a href="https://hairdressing-salon-demo.firebaseapp.com/" target="_blank" class="btn">
             <i class="far fa-eye"></i>Zobacz więcej</a>
           <a href="https://github.com/pawelwiecko/demo-hairdressing-salon" target="_blank" class="btn">
+            <i class="fab fa-github"></i>GitHub
+          </a>
+        </div>
+        <div class="box">
+          <a href="https://soulofcity-demo-band.firebaseapp.com" target="_blank">
+            <img src="image/projects/project2.JPG" alt="Project" />
+          </a>
+          <a href="https://soulofcity-demo-band.firebaseapp.com" target="_blank" class="btn">
+            <i class="far fa-eye"></i>Zobacz więcej</a>
+          <a href="https://github.com/pawelwiecko/soulofcity-demo-band" target="_blank" class="btn">
             <i class="fab fa-github"></i>GitHub
           </a>
         </div>
@@ -83,7 +92,7 @@
         <a href="#" class="icon4"><i class="fab fa-js-square fa-3x"></i>JavaScript</a>
       </div>
     </section>
-    <section id="contact">
+    <section  id="contact">
         <h1>Kontakt</h1>
       <div class="wrapper">
         <div class="info">
@@ -108,15 +117,15 @@
           <form id="contactForm">
             <p>
               <label for="name">Imię</label>
-              <input id="name" type="text" name="name" required>
+              <input id="name" id="inpt" type="text" name="name" required>
             </p>
             <p>
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" required>
+              <input id="email" id="inpt" type="email" name="email" required>
             </p>
             <p>
               <label for="message">Wiadomość</label>
-              <textarea id="message" name="message" id="" cols="25" rows="5"></textarea>
+              <textarea id="message" id="inpt" name="message" id="" rows="3"></textarea>
             </p>
             <p>
               <button type="submit">Wyślij</button>
