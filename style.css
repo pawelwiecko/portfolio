@@ -8,8 +8,6 @@ body {
     background-color: #F1F1F1;
     color: #504f4f;
     line-height: 1.6;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .container {
@@ -144,6 +142,8 @@ section#home {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 5rem;
+
 }
 
 .box {
@@ -260,7 +260,7 @@ section#home {
 .techIcons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 5vh;
+    margin:10rem;
     justify-items: center;
 }
 
@@ -338,7 +338,7 @@ section#home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    margin: 2rem;
+    margin: 10rem;
     padding: 1rem;
     background-image: linear-gradient(to left top, #678890, #5c838c, #507e89, #447985, #367482);
     -webkit-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.36);
@@ -407,11 +407,11 @@ input {
 
 @media screen and (max-width: 1024px) {
 
-    
+
     
     .contact form button {
-        padding: 1rem;
-        margin: 1rem;
+        padding: 0.7rem;
+        margin: 0;
    
     }
     .navbar {
@@ -430,7 +430,7 @@ input {
 
     .navbar ul li a{
         width:100%;
-        padding: 0.1rem;
+        padding: 0.3rem;
         margin-left:0;
         margin-right:0;
         display:block;
@@ -438,17 +438,13 @@ input {
     }
 
     .navbar ul li {
-        margin: 0 0 0.3rem 0;
+        margin: 0 0 0.1rem 0;
         padding: 0;
 
     }
 
      .navbar ul li a:hover {
-        background-color: rgba(209, 236, 52, 0.3);
         color: #504f4f;
-        transition: 0.1s;
-        transition: all 0.1s ease-out;
-        cursor: pointer;
     } 
 
 
@@ -483,9 +479,12 @@ input {
         padding: 0.7rem;
     }
 
-    section{
-        height: auto;
+ 
+    .projects{
+        margin: 0;;
     }
+
+    
 
     section h2 {
         font-size: 1.2rem;
@@ -494,11 +493,14 @@ input {
     }
 
     section h1 {
-        font-size: 1.5rem;
-        margin-top: 11rem;
+        font-size: 1.3rem;
+        margin-top: 12.5rem;
         margin-bottom: 1rem;
 
     }
+
+    
+
 
 
     .box {
@@ -578,26 +580,17 @@ input {
         grid-gap: 0;
     }
 
-    .contact form input,
-    .contact form textarea{
-     font-size: 1rem;
-     
-    
-    }
+
 
   
     .contact form input,
     .contact form textarea {
         margin: 0.6rem;
+        font-size: 1rem;
    
     }
 
  
-
-    section#contact h1 {
-
-        color: #504f4f;
-    }
 
     .contact {
         background-image: linear-gradient(to left top, #678890, #5c838c, #507e89, #447985, #367482);
@@ -643,7 +636,7 @@ input {
 
 
         .navbar ul li a{
-            padding: 0;
+            padding: 0.1rem;
         }
     
     
@@ -675,13 +668,6 @@ input {
         }
 
 
-
-
-        textarea {
-            height: 4em;
-            width: 50em;
-        }
-
      
 
         .info2 {
@@ -693,14 +679,15 @@ input {
         }
 
         .contact form button {
-            padding: 0.4rem;
+            padding: 0.6rem;
+            margin: 0;
           
        
         }
 
         section h1 {
             font-size: 1.2rem;
-            margin-top: 6rem;
+            margin-top: 10rem;
             margin-bottom: 1rem;
 
         }
