@@ -55,3 +55,47 @@ function saveMessage(name, email, message){
         message: message
     })
 }
+
+// Navigation scroll
+
+let previousScroll;
+let  scrolling;
+let header = document.querySelector('header');
+
+function scrolled() {
+    let scrollTop = window.scrollY;
+    if (scrollTop > previousScroll) {
+        header.classList.add('header-up');
+    } else {
+        header.classList.remove('header-up');
+    }
+    previousScroll = scrollTop;
+}
+
+document.addEventListener('scroll', function () {
+    scrolling = true;
+}, false);
+
+setInterval(function () {
+    if (scrolling) {
+        scrolled();
+        scrolling = false;
+    }
+}, 100);
+
+// Menu-nav
+
+
+const menu = document.getElementById('menu');
+const nav = document.getElementById('nav');
+const exit = document.getElementById('exit');
+
+menu.addEventListener('click', function(e) {
+    nav.classList.toggle('hide-mobile');
+    e.preventDefault();
+});
+
+exit.addEventListener('click', function(e) {
+    nav.classList.add('hide-mobile');
+    e.preventDefault();
+});

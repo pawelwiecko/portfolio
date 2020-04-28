@@ -5,30 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
   <title>Portfolio Paweł Więcko</title>
   <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/90f298ed72.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#home">Strona główna</a></li>
+  <header>
+    <nav>
+      <a href="#" class="hide-desktop">
+        <img src="image/ham.svg" alt="toggle menu" class="menu" id="menu">
+    </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop">
+          <img src="/image/exit.svg" alt="exit menu">
+      </li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">O mnie</a></li>
         <li><a href="#work">Moje projekty</a></li>
         <li><a href="#technologies">Technologie w których pracuję</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
+  </header>
+  <div class="container">
     <section id="home">
-      <h1 class="name">Paweł Więcko</h1>
-      <h2 class="name2">Front-end developer</h2>
+      <div class="title">
+      <h1>Paweł Więcko</h1>
+      <p>Front-end developer</p>
+    </div>
       <div class="icons">
         <a href="https://www.facebook.com/wieckop" target="_blank">
           <i class="fab fa-facebook fa-2x"></i>
@@ -40,18 +50,24 @@
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
+      <div class="scroll_down">
+        <div class="down"></div>
+    </div>
     </section>
     <section id="about">
       <h1>O mnie</h1>
-      <div class="grid">
+      <div class="content-about">
         <div class="image">
           <img src="image/face.png" alt="zdjęcie portretowe Pawła Więcko">
         </div>
         <div class="content">
-          <p>Pół roku temu rozpocząłem zmianę branży na IT. Od początku nauki postanowiłem wejść w świat front-end, ze
-            względu na chęć nauki tworzenia stron internetowych. Dwudziestego szóstego lipca ukończyłem miesięczne
-            szkolenie Squiz Camp
-            (Front-End Developer) w Szczecinie.</p>
+          <p>Pod koniec roku 2018 rozpocząłem zmianę branży na IT. Od początku nauki postanowiłem wejść w świat
+            front-end, ze
+            względu na chęć nauki tworzenia stron internetowych. Dwudziestego szóstego lipca 2019 ukończyłem miesięczne
+            szkolenie Squiz Camp (Front-End Developer) w Szczecinie. Kolejnym moim korkiem na nowej śćieżce, było
+            odbycie w okresie 18.11.19-23.01.20 szkolenia "Programiści dla Szczecina -
+            budowanie aplikacji internetowych" zrealizowanego przez Zachodniopomorską Szkołę Biznesu w Szczecinie.
+            Następnym etapem było wzięćie udziału w lutym 2020 roku w IAI WEBCAMP.</p>
         </div>
       </div>
     </section>
@@ -62,22 +78,32 @@
       </div>
       <div class="projects">
         <div class="box">
-          <a href="https://hairdressing-salon-demo.firebaseapp.com/" target="_blank">
-            <img src="image/projects/project.JPG" alt="Project" />
+          <a href="https://soulofcity-demo-band.firebaseapp.com/" target="_blank">
+            <img src="image/projects/project2.JPG" alt="Project" />
           </a>
-          <a href="https://hairdressing-salon-demo.firebaseapp.com/" target="_blank" class="btn">
+          <a href="https://soulofcity-demo-band.firebaseapp.com/" target="_blank" class="btn">
             <i class="far fa-eye"></i>Zobacz więcej</a>
-          <a href="https://github.com/pawelwiecko/demo-hairdressing-salon" target="_blank" class="btn">
+          <a href="https://github.com/pawelwiecko/soulofcity-demo-band" target="_blank" class="btn">
             <i class="fab fa-github"></i>GitHub
           </a>
         </div>
         <div class="box">
-          <a href="https://soulofcity-demo-band.firebaseapp.com" target="_blank">
-            <img src="image/projects/project2.JPG" alt="Project" />
+          <a href="https://intacz.pl" target="_blank">
+            <img src="image/projects/project3.JPG" alt="Project" />
           </a>
-          <a href="https://soulofcity-demo-band.firebaseapp.com" target="_blank" class="btn">
+          <a href="https://intacz.pl" target="_blank" class="btn">
             <i class="far fa-eye"></i>Zobacz więcej</a>
-          <a href="https://github.com/pawelwiecko/soulofcity-demo-band" target="_blank" class="btn">
+          <a href="https://github.com/pawelwiecko/intacz" target="_blank" class="btn">
+            <i class="fab fa-github"></i>GitHub
+          </a>
+        </div>
+        <div class="box">
+          <a href="https://hairdressing-salon-demo.web.app/" target="_blank">
+            <img src="image/projects/project.JPG" alt="Project" />
+          </a>
+          <a href="https://hairdressing-salon-demo.web.app/" target="_blank" class="btn">
+            <i class="far fa-eye"></i>Zobacz więcej</a>
+          <a href="https://github.com/pawelwiecko/demo-hairdressing-salon" target="_blank" class="btn">
             <i class="fab fa-github"></i>GitHub
           </a>
         </div>
@@ -92,24 +118,25 @@
         <a href="#" class="icon4"><i class="fab fa-js-square fa-3x"></i>JavaScript</a>
       </div>
     </section>
-    <section  id="contact">
-        <h1>Kontakt</h1>
+    <section id="contact">
+      <h1>Kontakt</h1>
       <div class="wrapper">
         <div class="info">
-          
+
           <ul>
-            <li><a href="mailto:pawelwiecko2018@gmail.com"><i class="far fa-envelope"></i>pawelwiecko2018@gmail.com</a></li>
+            <li><a href="mailto:pawelwiecko2018@gmail.com"><i class="far fa-envelope"></i>pawelwiecko2018@gmail.com</a>
+            </li>
             <li><a href="tel:693-547-110"><i class="fas fa-phone-alt"></i>693 547 110</a></li>
             <div class="info2">
-            <li><a href="https://www.facebook.com/wieckop" target="_blank">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a></li>
-            <li><a href="https://www.linkedin.com/in/pawelwiecko" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a></li>
-            <li><a href="https://github.com/pawelwiecko" target="_blank">
-                <i class="fab fa-github fa-2x"></i></a></li>
-              </div>
+              <li><a href="https://www.facebook.com/wieckop" target="_blank">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a></li>
+              <li><a href="https://www.linkedin.com/in/pawelwiecko" target="_blank">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a></li>
+              <li><a href="https://github.com/pawelwiecko" target="_blank">
+                  <i class="fab fa-github fa-2x"></i></a></li>
+            </div>
           </ul>
           <div class="alert">Twoja wiadomość została wysłana</div>
         </div>
@@ -117,15 +144,15 @@
           <form id="contactForm">
             <p>
               <label for="name">Imię</label>
-              <input id="name" id="inpt" type="text" name="name" required>
+              <input id="name" type="text" name="name" required placeholder="Paweł">
             </p>
             <p>
               <label for="email">Email</label>
-              <input id="email" id="inpt" type="email" name="email" required>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com">
             </p>
             <p>
               <label for="message">Wiadomość</label>
-              <textarea id="message" id="inpt" name="message" id="" rows="3"></textarea>
+              <textarea id="message" name="message" rows="3"></textarea>
             </p>
             <p>
               <button type="submit">Wyślij</button>
@@ -135,6 +162,10 @@
       </div>
     </section>
   </div>
-<script src="main.js"></script>
+  <footer>
+    Copyright © Project by Paweł Wiecko
+  </footer>
+  <script src="main.js"></script>
 </body>
+
 </html>
