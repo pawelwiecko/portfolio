@@ -16,9 +16,7 @@ body {
 
 /* Navigation */
 
-.header-up {
-    display: none;
-}
+
 
 
 header {
@@ -37,6 +35,7 @@ header {
     width: 30px;
     margin-top: 45%;
     cursor: pointer;
+    
 }
 
 nav ul {
@@ -234,7 +233,7 @@ select p {
 }
 
 section#home {
-    background: linear-gradient(rgba(56, 56, 56, 0.7), rgba(56, 56, 56, 0.7)), url("/image/sky.jpg") center/cover;
+    background: linear-gradient(rgba(56, 56, 56, 0.7), rgba(56, 56, 56, 0.7)), url("./image/sky.jpg") center/cover;
     height: 100vh;
 
 }
@@ -501,5 +500,13 @@ footer {
     .techIcons{
         grid-template-columns: 1fr;
     }
+
+.box {
+    flex: 25rem;
+    margin: 1rem;
+}
+
+
+
 
 }

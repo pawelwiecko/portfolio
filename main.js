@@ -56,25 +56,7 @@ function saveMessage(name, email, message){
     })
 }
 
-// Navigation scroll
 
-let previousScroll;
-let  scrolling;
-let header = document.querySelector('header');
-
-function scrolled() {
-    let scrollTop = window.scrollY;
-    if (scrollTop > previousScroll) {
-        header.classList.add('header-up');
-    } else {
-        header.classList.remove('header-up');
-    }
-    previousScroll = scrollTop;
-}
-
-document.addEventListener('scroll', function () {
-    scrolling = true;
-}, false);
 
 setInterval(function () {
     if (scrolling) {
@@ -92,10 +74,15 @@ const exit = document.getElementById('exit');
 
 menu.addEventListener('click', function(e) {
     nav.classList.toggle('hide-mobile');
+    header.classList.remove('header-up');
     e.preventDefault();
 });
 
 exit.addEventListener('click', function(e) {
     nav.classList.add('hide-mobile');
+    header.classList.remove('header-up');
     e.preventDefault();
+
 });
+
+
